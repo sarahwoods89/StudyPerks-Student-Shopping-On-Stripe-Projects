@@ -1,0 +1,9 @@
+{
+  "name": "studyperks-student-shop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A student shopping assistant prototype for Stripe Projects",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
