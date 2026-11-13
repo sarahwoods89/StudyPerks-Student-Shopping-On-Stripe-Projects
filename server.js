@@ -25,7 +25,13 @@ http.createServer((req, res) => {
   }
   fs.readFile(file, (error, data) => {
     if (error) { res.writeHead(404).end('Not found'); return; }
-    res.writeHead(200, { 'Content-Type': mime[path.extname(file)] || 'application/octet-stream' });
+    res.writeHead(200, {
+      'Content-Type': mime[path.extname(file)] || 'application/octet-stream',
+      'Cache-Control': 'no-store'
+    });
     res.end(data);
   });
-}).listen(Number(process.env.PORT) || 4173, '0.0.0.0');
+}).listen(Number(process.env.PORT) || 4173, '0.0.0.0', () => {
+  const port = Number(process.env.PORT) || 4173;
+  console.log(`StudyPerks local app is ready at http://localhost:${port}`);
+});
