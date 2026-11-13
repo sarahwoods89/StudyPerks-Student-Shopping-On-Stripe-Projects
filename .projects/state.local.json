@@ -1,0 +1,26 @@
+{
+  "version": 4,
+  "project": {
+    "catalog": "prod",
+    "initializedAt": "2026-11-11T12:49:43.124Z",
+    "merchantDisplayName": null,
+    "merchantId": "acct_1UaYv1CKUb5iEXUO",
+    "projectId": "project_61VjyvWgADY3BskGy16VjwsOLgGCs9iIZNreKy9SK7jU",
+    "projectName": "stripe-hackathon"
+  },
+  "providers": {},
+  "resources": {
+    "stripe-sandbox": {
+      "configuration": {},
+      "createdAt": "2026-11-13T20:19:18.114Z",
+      "lastRevealedAt": "2026-11-13T20:19:20.138Z",
+      "lastStatus": "complete",
+      "livemode": true,
+      "name": "stripe-sandbox",
+      "providerId": "prvdr_stripe_native",
+      "providerName": "stripe",
+      "resourceId": "fres_61VkotgkP3cCWqn0q16VjwsOLgGCs9iIZNreKy9SK3Hk",
+      "serviceId": "sandbox"
+    }
+  }
+}
